@@ -1,0 +1,5 @@
+.portfolio-banner__container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}

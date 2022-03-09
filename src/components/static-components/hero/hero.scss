@@ -15,8 +15,10 @@
   font-size: 50px;
 
   strong {
+    display: block;
     font-size: 72px;
     font-weight: 800;
+    color: var(--accent);
   }
 }
 

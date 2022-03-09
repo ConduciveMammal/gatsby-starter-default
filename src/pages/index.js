@@ -1,34 +1,12 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout/layout"
 import Seo from "../components/global/seo"
-import PortfolioItem from "../components/portfolio-item"
 import HeroBanner from "../components/static-components/hero/hero"
+import PortfolioBanner from "../components/static-components/portfolio-banner/portfolio-banner"
 
-export const query = graphql`
-query PortfolioItems {
-  allContentfulPortfolioItem(limit: 4) {
-    edges {
-      node {
-        id
-        url: projectUrl
-        name: projectName
-        date: projectDate
-        featuredImage {
-          file {
-            url
-          }
-        }
-        brief: projectBrief {
-          raw
-        }
-      }
-    }
-  }
-}
-`
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -46,11 +24,7 @@ const IndexPage = ({data}) => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
-    {data.allContentfulPortfolioItem.edges.map(({ node }, index) => (
-      <div key={index}>
-        <PortfolioItem item={node} />
-      </div>
-    ))}
+    <PortfolioBanner />
 
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
