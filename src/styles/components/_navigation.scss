@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.navigation__item a {
+  font-size: 18px;
+  color: inherit;
+  text-decoration: none;
+
+  &.active {
+    font-weight: 600;
+  }
+}

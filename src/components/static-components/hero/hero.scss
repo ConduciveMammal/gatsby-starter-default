@@ -1,0 +1,53 @@
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.hero-section__content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section__title {
+  font-weight: 500;
+  font-size: 50px;
+
+  strong {
+    font-size: 72px;
+    font-weight: 800;
+  }
+}
+
+.hero-section__intro {
+  font-size: 20px;
+}
+
+.hero-section__contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.hero-section__social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  a {
+    color: #a1c7ce;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  svg {
+    width: 20px;
+  }
+}
