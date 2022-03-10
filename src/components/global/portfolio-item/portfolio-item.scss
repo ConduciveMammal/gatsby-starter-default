@@ -19,9 +19,8 @@
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+  flex-direction: column;
   padding: 30px;
   opacity: 0;
   transition: opacity 0.2s ease-in;
@@ -32,7 +31,14 @@
 }
 
 .portfolio-item__title {
-  color: #fff;
+  align-self: flex-start;
+  color: var(--accent);
   font-size: 44px;
   user-select: none;
+  margin: 0;
+  margin-top: auto;
+}
+
+.portfolio-item__link {
+  align-self: flex-end;
 }

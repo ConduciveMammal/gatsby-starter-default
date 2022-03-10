@@ -13,6 +13,8 @@ const IndexPage = ({data}) => (
 
     <Seo title="Home" />
     <HeroBanner />
+    <PortfolioBanner />
+    <div className="wrapper">
     <h1>Hi Liam</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -24,7 +26,7 @@ const IndexPage = ({data}) => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
-    <PortfolioBanner />
+
 
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
@@ -32,6 +34,7 @@ const IndexPage = ({data}) => (
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p>
+    </div>
   </Layout>
 )
 

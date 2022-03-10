@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-// import { Link } from "gatsby"
+import Button from "../buttons/button"
+
 import './portfolio-item.scss'
 
 const PortfolioItem = ({ item }) => (
@@ -17,6 +18,7 @@ const PortfolioItem = ({ item }) => (
           loading="lazy"/>
       </div>
       <div className="portfolio-item__overlay">
+        <Button type="link" link={item.url} classes="button--accent portfolio-item__link">View Project</Button>
         <h3 className="portfolio-item__title">{item.name}</h3>
       </div>
     </div>

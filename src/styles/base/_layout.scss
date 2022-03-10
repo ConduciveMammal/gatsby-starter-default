@@ -17,3 +17,9 @@
     padding-right: 0;
   }
 }
+
+.wrapper {
+@media screen and (max-width: 480px) {
+    padding: 0 15px;
+  }
+}

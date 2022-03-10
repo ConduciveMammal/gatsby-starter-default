@@ -1,5 +1,25 @@
 .portfolio-banner__container {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat( auto-fit, minmax(414px, 1fr) );
+}
+
+.portfolio-banner__heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-banner__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.portfolio-banner__subtitle {
+  font-size: 42px;
+  font-weight: bold;
+
+  strong {
+    color: var(--accent);
+  }
 }
